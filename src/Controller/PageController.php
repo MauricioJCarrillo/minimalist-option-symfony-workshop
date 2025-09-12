@@ -11,8 +11,6 @@ class PageController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
-        // return new Response('This is the index page.');
-
         return $this->render('pages/home.html.twig', [
             'title' => 'Welcome to the Home Page',
         ]);
