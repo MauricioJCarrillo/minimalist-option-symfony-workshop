@@ -15,5 +15,13 @@ class PageController extends AbstractController
             'title' => 'Welcome to the Home Page',
         ]);
     }
+
+    #[Route('/item', name: 'item')]
+    public function item(): Response
+    {
+        return $this->render('pages/item.html.twig', [
+            'title' => 'Welcome to the Item Page',
+        ]);
+    }
 }
 
